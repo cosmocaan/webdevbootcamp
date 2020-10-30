@@ -1,0 +1,14 @@
+HTML:
+<b></b> - Bold Element
+<p></P> - Paragraph Element
+<hx></h> - Heading Elements where x is 1,2,3,4,5,6 for heading size, 1 being largest
+
+
+Mozilla Developer Network - Resources for developers
+Search topic with mdn to get to 
+  developer.mozilla.org
+    HTML elements reference
+    HTML tutorial
+
+
+
