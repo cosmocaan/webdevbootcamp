@@ -2,6 +2,7 @@ HTML:
 <b></b> - Bold Element
 <p></P> - Paragraph Element
 <hx></h> - Heading Elements where x is 1,2,3,4,5,6 for heading size, 1 being largest
+   Always cascade headings in order 
 
 
 Mozilla Developer Network - Resources for developers
@@ -9,6 +10,77 @@ Search topic with mdn to get to
   developer.mozilla.org
     HTML elements reference
     HTML tutorial
+
+Chrome Developer Tools:
+Right Click > Inspect to see the elements of a website. You can edit in the inspect window to modify your local copy of the page.
+
+Essential Elements for every page:
+Boilerplate 
+<!DOCTYPE html> - Flag to indicate using html5
+<html></html> - Represents the top level of every html document (read the docs in MDN)
+<head></head> - Document metadata element inside the head element at the top
+<title></title> - Changes what shows in the browser tab and google uses to create links in search results
+<body></body> - All of the elements of our page
+
+In VSCode new document, type ! and press tab, it gives you the strucure above
+
+VSCode tip - Launch Command Pallette - Search for Format Document Use hot key Shift+Alt+F
+             Settings - Format on Save will format when you save
+
+List Elements:
+  <ul></ul> - Unordered - Bullets
+  <ol></ol> - Numbered - Sequential
+    <li></li> - List items nested within the list elements
+You can nest lists within lists
+<li>Part1
+    <ul>
+       <li>A</li>
+       <li>B></li>
+    </UL>
+    
+<li>
+
+VSCode Tip - Duplicate lines - Shift+Alt+ down or up arrow
+
+
+Anchor Element:
+<a></a> - Anchor used to go to another location in a page or send you to a link
+   You need an attribute to pass to the tag
+     <a href="https://www.google.com"> THIS IS A LINK</a> - takes you to a link outside of your site
+	 <a href="mysecondpage.html">THIS IS MY SECOND PAGE</a> - takes you to file:///localhost/mysecondpage.html
+	 
+Image Element:
+<img src="/images/mypicture.jpg">  Or just keep the image in the same directory as the html.  No closing tag for img element
+<img src="https://www.mypictures.com/myexternalpicture.jpg">
+
+alt attribute - specify what the image is
+   <img src="/images/mypicture.jpg" alt="Image of mypicture.jpg">
+   
+   
+Comments in html:
+<!-- This is my comment -->
+VSCode has a shortcut - CTRL+/
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
 
 
 
