@@ -116,6 +116,33 @@ Forms (TR, TD, TH):
 Bird Species - https://en.wikipedia.org/wiki/Largest_organisms#Heaviest_living_bird_species
 
 
+-- tr, td, th:
+<table>
+  <thead>
+    <tr>     <-- Table row
+      <th>Table Header</th>
+    </tr>
+  </thead>
+ 
+  <tbody>
+    <tr>
+      <td> Cell 1 </td>
+      <td> Cell 2 in same row </td>
+    </tr>  
+  </tbody>
+
+-- See above for thead, tody, tfoot which help delineate sections of a table
+
+-- Colspan and Rowspan
+
+
+-- Forms:
+<form> Container to group form elements also tells where to send the data.
+
+forms <tab>  Emmet will start the form
+
+
+
 
 
 
