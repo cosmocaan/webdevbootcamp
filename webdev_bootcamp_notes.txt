@@ -62,6 +62,90 @@ Comments in html:
 VSCode has a shortcut - CTRL+/
 
 
+-- Block vs Inline Elements:
+<h1><h2><p><img>are examples of block elements. Headings consume a line (block) all their own.  Paragraph is placed in it's own block.
+
+<div></div> - Content division element. Generic container to group elements together into an entire block.  Useful for common CSS around the group of elements.
+
+
+<span></span> - generic inline container. Can format content within a block to have a different style.
+
+
+Odd assortment of elements:
+<hr> - Horizontal rule.  An empty line for spacing.  No closing tag is used for this element.
+
+<br> - Line break to format text how you want it broken up. Can use within a <p></p> to break at certain points
+
+<sup></sup> - Superscript Elevated off the baseline for footnotes. Nest <a> anchor tag for links
+
+<sub></sub> - Subscript Below the baseline such as chemistry 
+
+-- Entity codes:
+ https://dev.w3.org/html5/html-author/charref
+
+Start with & and end with ;
+Special characters such as copyright symbol (reserved character)
+
+<h1>&#9731;Snowman Productions <sup>&reg;</sup></h1>
+
+-- Semantic Markup
+"What purpose or role does that HTML element have?"
+Instead of <DIVS>
+<header>
+<footer>
+<main>
+<section>
+<article>
+<nav>
+<aside>
+<summary>
+<details>
+Stuff like that
+
+-- VSCODE Tips
+Emmet - Helps write html code
+docs.emmet.io/cheat-sheet
+
+-- Forms and Tables:
+HTML Tables:
+Wikipedia Table Example - https://en.wikipedia.org/wiki/List_of_largest_cities#List
+Dole/Kemp Website - http://www.dolekemp96.org/main.htm
+Space Jam Website - https://www.spacejam.com/
+
+Forms (TR, TD, TH):
+Bird Species - https://en.wikipedia.org/wiki/Largest_organisms#Heaviest_living_bird_species
+
+
+-- tr, td, th:
+<table>
+  <thead>
+    <tr>     <-- Table row
+      <th>Table Header</th>
+    </tr>
+  </thead>
+ 
+  <tbody>
+    <tr>
+      <td> Cell 1 </td>
+      <td> Cell 2 in same row </td>
+    </tr>  
+  </tbody>
+
+-- See above for thead, tody, tfoot which help delineate sections of a table
+
+-- Colspan and Rowspan
+
+
+-- Forms:
+<form> Container to group form elements also tells where to send the data.
+
+forms <tab>  Emmet will start the form
+
+
+
+
+
+
 
 
 	 
