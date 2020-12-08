@@ -141,30 +141,17 @@ Bird Species - https://en.wikipedia.org/wiki/Largest_organisms#Heaviest_living_b
 
 forms <tab>  Emmet will start the form
 
+Common input elements:
+<input>  Default is a text input
+
+<input type = "text" placeholder = "Username">
+<input type = "password" placeholder = "Password">
+<input type = "color">
+<input type = "number" placeholder = "Numbers only">
+
+See mdn for other input types
+
+Placeholder attribute tells in the form type what data is needed
 
 
-
-
-
-
-
-	 
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
+Labels:
