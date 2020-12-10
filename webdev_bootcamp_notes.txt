@@ -135,36 +135,13 @@ Bird Species - https://en.wikipedia.org/wiki/Largest_organisms#Heaviest_living_b
 
 -- Colspan and Rowspan
 
+<label> will link data together between form elements 
 
 -- Forms:
 <form> Container to group form elements also tells where to send the data.
 
 forms <tab>  Emmet will start the form
 
+<button> submits the action for <form action=xxx>
 
-
-
-
-
-
-
-	 
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
+name="text" attribute is what the server uses to query the server
