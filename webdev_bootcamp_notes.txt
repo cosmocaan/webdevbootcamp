@@ -168,3 +168,74 @@ Review input elements also text area
 
 Form Validations:
 html attribute - required,minlength,pattern
+
+-- CSS
+Use <link> element in the head section of your html to specify href location for your css file
+<link rel="stylesheet" href="app.css">
+
+
+Example CSS:
+h1 {
+    color: green;
+}
+h2 {
+    color: magenta;
+}
+p {
+    color: white;
+    background-color: black; 
+}
+button {
+    color: red;
+    background-color: pink;
+}
+
+Colors:
+htmlcolorcodes.com
+
+RGB colors:
+h1 {
+    color: green;
+    background-color: rgb(89,151,0)
+}
+
+Hex Colors Each RGB is 2 hex digits:
+ h1 {
+    color: #5FCFFC;
+    background-color: rgb(89,151,0)
+}
+
+
+Common Text properties:
+text-align
+font-weight
+text-decoration
+line-height
+letter-spacing
+
+Font size:
+Relative and Absolute sizes
+px is most common
+
+Font fmily:
+Depends on fonts included with browser (web-safe fonts)
+You can send your custom fonts (covered later)
+cssfontstack.com
+
+font stack - list of fonts to use in order.
+
+Exercise:
+h1 {
+    font-family: monospace;
+    text-align: center;
+    font-weight: 100;
+    font-size: 40px;
+    letter-spacing: 20px;
+    text-decoration:  wavy underline rgb(255,0,235);
+    text-transform: uppercase;
+}
+
+
+CSS Selectors:
+
+
