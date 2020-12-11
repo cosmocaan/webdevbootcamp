@@ -142,7 +142,7 @@ Bird Species - https://en.wikipedia.org/wiki/Largest_organisms#Heaviest_living_b
 
 forms <tab>  Emmet will start the form
 
-<<<<<<< HEAD
+
 Common input elements:
 <input>  Default is a text input
 
@@ -157,8 +157,14 @@ Placeholder attribute tells in the form type what data is needed
 
 
 Labels:
-=======
+
 <button> submits the action for <form action=xxx>
 
 name="text" attribute is what the server uses to query the server
->>>>>>> 20201209
+
+Select and option elements - Drop Down selection
+
+Review input elements also text area
+
+Form Validations:
+html attribute - required,minlength,pattern
