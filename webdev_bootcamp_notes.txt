@@ -237,5 +237,210 @@ h1 {
 
 
 CSS Selectors:
+Universal and Element Selectors
+https://www.canva.com/design/DAEANYqyik4/tdD7T7i698xhdPQUS_nrtQ/view?utm_content=DAEANYqyik4&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton
+https://coolors.co/palettes/trending
+
+
+Class Selector (most comon)
+
+Exercise:
+index.html:
+<h1>Todos</h1>
+<ul>
+  <li class="done">Walk Chickens</li>
+  <li>Clean Out Coop</li>
+  <li class="done">Collect Chicken Eggs</li>
+  <li>Incubate Chicken Eggs</li>
+  <li>Hatch New Chickens!</li>
+</ul>
+<button id="clear">Clear List</button>
+<button>Add Todo</button>
+
+app.css:
+/* Make all LI's blue */
+li {
+    color: blue;
+}
+/* Make everything with the class of 'done' grey*/
+.done {
+    color: grey;
+}
+/* Make the element with the id of 'clear' have a red BG and white text */
+#clear {
+    color: white;
+    background-color: red;
+}
+
+
+Descendnt selector:
+/* All anchors in the li will be blue */
+li a {
+  color: blue;
+}
+
+Exercise:
+index.html:
+<!--DON'T CHANGE THIS FILE (PLEASE!)-->
+<header>
+  <a href="/home">Home</a>
+  <a href="/contact">Contact</a>
+  <a href="/about">About</a>
+</header>
+
+<p>
+  I like to eat <a href="/popcorn">popcorn</a> and <a href="/donuts">donuts</a>
+</p>
+
+<p id="dislikes">
+  I hate eating <a href="/pickles">pickles</a> and <a href="/beets">beets</a>
+</p>
+
+app.css:
+header a {
+    font-size: 30px;
+    color: teal;
+}
+
+#dislikes a {
+    color: red;
+    font-weight: bold;
+}
+
+Adjacent Selector and Direct Descendant
+h1 + a {
+  background-color: pink;
+}
+
+h2 > button {
+  background-color: magenta;
+}
+
+
+Attribute Selector
+input[type="password"]{
+  color: greenyellow;
+}
+
+Pseudo Classes
+Keyword to specify a special state of the selected element
+button:hover {
+  background-color: red;
+  color: white;
+}
+
+Checkerboard example:
+div:nth-of-type(1n){
+    background-color:red;
+}
+div:nth-of-type(2n){
+    background-color:black;
+}
+
+Pseudo Elements
+.post::first-letter {
+  font-size: 20px;
+}
+h2::first-letter {
+  font-size: 30px;
+  color: magenta;
+}
+
+Cascade
+The order you have your types are declared as the last matching type in CSS
+
+
+Specificity
+https://specificity.keegan.st/
+
+ID > CLASS > ELEMENT selectors
+
+Tip: CSS Dev tools in Chrome
+Inspector: see styles for why a style is winning over another
+
+-- CSS Box Model
+Border, Padding, Margin, Width & height
+Border Radius
+
+Width and Height:
+div {
+  width: 200px:
+  height: 200px;
+  background-color: ##0078d2;
+}
+
+Border and Border radius:
+border-width
+border-color
+border-style
+
+#one {
+  background-color: #e5989b;
+  /*without box-sizing, border is outsidethe element*/
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  /* put border on inside parameter of the element.*/
+  box-sizing: border-box;
+}
+
+Shorter way:
+border: 5px solid black;
+
+border-radius: 30px;
+border-radius: 50%;
+
+Exercise:
+HTML:
+<div class="card">
+  <img alt="" src="https://assets.codepen.io/123865/dog.png">
+  <h1>I Am Dog</h1>
+</div>
+
+CSS:
+div.card {
+    width: 210px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 5px;
+    text-align: center;
+    }
+    
+img {
+    width: 200px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(236,183,191);
+    border-radius: 50%;
+}
+
+
+Padding:
+Gap between content and border
+padding-top:
+padding-right:
+padding-bottom:
+padding-left:
+
+Padding Shorthand:
+Padding: 5px;    <-- Apply to all 4 sides
+padding: 5px 10px;   <-- Vertical, Horizontal
+padding: 5px 1px 0 2px;  <-- Top, Right, Bottom, left
+
+
+Margin:
+Gap between the border and surrounding elements
+margin: 5px;    <-- Apply to all 4 sides
+margin: 5px 10px;   <-- Vertical, Horizontal
+margin: 5px 1px 0 2px;  <-- Top, Right, Bottom, left
+
+
+Display Property:
+Percent can be used it will assume the percentage of the parent element so if you have a div in a section, and assign width 50%, it will be 50% of the width of the section
+
+
+Ems and Rems
+
 
 

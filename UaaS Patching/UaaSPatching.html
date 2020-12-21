@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UaaS Patching</title>
+  <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+  <h1><img src="./images/aa-logo.png" alt="American Airlines Logo"><b></b>Unix as a Service Patching</h1>
+  
+  <div id="sitedesc">
+    <p color="color: #0078d2;">Description of the site</p>
+    <p>Usage</p>
+    <p>Link where you will schedule your patching</p>  
+    <p>Link is where you will update your contact information for notifications of upcoming patching and validate apps and server lists </p>
+  </div>
+<table>
+  <tr id="tblhdr">
+    <th rowspan="2">Patch Group</th>
+    <th colspan="4">Patch Date</th>
+  </tr>
+  <tr> 
+    <th id="quarterhdr">Q1</th>
+    <th id="quarterhdr">Q2</th>
+    <th id="quarterhdr">Q3</th>
+    <th id="quarterhdr">Q4</th>
+  </tr>
+  <tr>
+    <td id="oddgroup">Group 1</td>
+    <td id="tbldate">Dynamic Date</td>
+    <td id="tbldate">Dynamic Date</td>
+    <td id="tbldate">Dynamic Date</td>
+    <td id="tbldate">Dynamic Date</td>
+  </tr>
+  <tr>
+    <td id="evengroup">Group 2</td>
+    <td id="tbldate">Dynamic Date</td>
+    <td id="tbldate">Dynamic Date</td>
+    <td id="tbldate">Dynamic Date</td>
+    <td id="tbldate">Dynamic Date</td>
+  </tr>
+  <tr>
+    <td id="oddgroup">Group 3</td>
+    <td id="tbldate">Dynamic Date</td>
+    <td id="tbldate">Dynamic Date</td>
+    <td id="tbldate">Dynamic Date</td>
+    <td id="tbldate">Dynamic Date</td>
+  </tr>
+  <tr>
+    <td id="evengroup">Group 4</td>
+    <td id="tbldate">Dynamic Date</td>
+    <td id="tbldate">Dynamic Date</td>
+    <td id="tbldate">Dynamic Date</td>
+    <td id="tbldate">Dynamic Date</td>
+  </tr>
+  <tr>
+    <td id="oddgroup">Group 5</td>
+    <td id="tbldate">Dynamic Date</td>
+    <td id="tbldate">Dynamic Date</td>
+    <td id="tbldate">Dynamic Date</td>
+    <td id="tbldate">Dynamic Date</td>
+  </tr>
+  <tr>
+    <td id="evengroup">Group 6</td>
+    <td id="tbldate">Dynamic Date</td>
+    <td id="tbldate">Dynamic Date</td>
+    <td id="tbldate">Dynamic Date</td>
+    <td id="tbldate">Dynamic Date</td>
+  </tr>
+  <tr>
+    <td id="oddgroup">Group 7</td>
+    <td id="tbldate">Dynamic Date</td>
+    <td id="tbldate">Dynamic Date</td>
+    <td id="tbldate">Dynamic Date</td>
+    <td id="tbldate">Dynamic Date</td>
+  </tr>
+  <tr>
+    <td id="evengroup">Group 8</td>
+    <td id="tbldate">Dynamic Date</td>
+    <td id="tbldate">Dynamic Date</td>
+    <td id="tbldate">Dynamic Date</td>
+    <td id="tbldate">Dynamic Date</td>
+  </tr>
+</table>
+
+<form action="/anyaction">
+  Enter some data
+</form>
+<label for="username">Enter a username: </label>
+<input id="username" type = "text" placeholder = "User ID"><br>
+<label for="password">Enter your password: </label>
+<input id="password" type = "password" placeholder = "Password"><br>
+<label for="application">Enter your application: </label>
+<input id="application" type = "text"><br>
+<label for="hostname">Enter the hostname: </label>
+<input id="hostname" type="text" placeholder = "Hostname"><br>
+<label for="patchdate">Select the patch date</label>
+<input id="patchdate" type = "date"><br>
+
+
+    <form action="/tacos">
+      <p>
+        <label for="application">Enter your application: </label>
+        <input type="text" id="application" placeholder="application" name="application">
+      </p>
+      <p>
+        <label for="server">Enter your server name: </label>
+        <input type="text" id="server" placeholder="server" name="server">
+      </p>
+      <p>
+        <label for="contact">Enter your contact information: </label>
+        <input type="email" id="contact" placeholder="contact" name="contact">
+      </p>
+      <p>
+        <label for="password">Enter your password information: </label>
+        <input type="password" id="password" placeholder="password" name="password">
+      </p>
+      <button> Submit </button>
+    </form>
+  <h2>Hijacking Searches</h2>
+  <h3>Search Reddit</h3>
+    <form action="https://www.reddit.com/search">
+          <input type="text" name="q">
+          <button>Search Reddit</button>
+    </form>
+  <h3>Search Google</h3>
+    <form action="https://www.google.com/search">
+          <input type="text" name="q">
+          <button>Search Google</button>
+    </form>
+  <h3>Search Youtube</h3>
+    <form action="https://www.youtube.com/results">
+          <input type="text" name="search_query">
+          <button>Search Youtube</button>
+    </form>
+  <h2>More imputs</h2>
+    <form action="/birds">
+      <input type="checkbox" name="agree_tos" id="agree">
+      <label for="agree">I agree to everything</label>
+    <p>
+      <label for="xs">xs</label>
+      <input type="radio" name="size" id="xs">
+      <label for="s">s</label>
+      <input type="radio" name="size" id="s">
+      <label for="m">m</label>
+      <input type="radio" name="size" id="m">
+    </p>  
+    
+    <p>
+      <label for="meal">Please select a meal</label>
+      <select name="meal" id="meal">
+        <option value="fish">fish</option>
+        <option value="chicken">chicken</option>
+        <option value="steak">steak</option>
+      </select>
+      <button>Submit</button>
+
+      
+      
+    </p>  
+  </form>
+    </body>
+</html>
