@@ -1,11 +1,11 @@
-HTML:
+-- HTML:
 <b></b> - Bold Element
 <p></P> - Paragraph Element
 <hx></h> - Heading Elements where x is 1,2,3,4,5,6 for heading size, 1 being largest
    Always cascade headings in order 
 
 
-Mozilla Developer Network - Resources for developers
+-- Mozilla Developer Network - Resources for developers
 Search topic with mdn to get to 
   developer.mozilla.org
     HTML elements reference
@@ -14,7 +14,7 @@ Search topic with mdn to get to
 Chrome Developer Tools:
 Right Click > Inspect to see the elements of a website. You can edit in the inspect window to modify your local copy of the page.
 
-Essential Elements for every page:
+-- Essential Elements for every page:
 Boilerplate 
 <!DOCTYPE html> - Flag to indicate using html5
 <html></html> - Represents the top level of every html document (read the docs in MDN)
@@ -22,12 +22,14 @@ Boilerplate
 <title></title> - Changes what shows in the browser tab and google uses to create links in search results
 <body></body> - All of the elements of our page
 
-In VSCode new document, type ! and press tab, it gives you the strucure above
+*** In VSCode new document, type ! and press tab, it gives you the strucure above
 
-VSCode tip - Launch Command Pallette - Search for Format Document Use hot key Shift+Alt+F
+*** VSCode tip - Launch Command Pallette - Search for Format Document Use hot key Shift+Alt+F
              Settings - Format on Save will format when you save
+*** VSCode tip - Cmd + k, Cmd + c comments lines
+*** VSCode Tip - Duplicate lines - Shift+Alt+ down or up arrow
 
-List Elements:
+-- List Elements:
   <ul></ul> - Unordered - Bullets
   <ol></ol> - Numbered - Sequential
     <li></li> - List items nested within the list elements
@@ -40,24 +42,21 @@ You can nest lists within lists
     
 <li>
 
-VSCode Tip - Duplicate lines - Shift+Alt+ down or up arrow
-
-
-Anchor Element:
+-- Anchor Element:
 <a></a> - Anchor used to go to another location in a page or send you to a link
    You need an attribute to pass to the tag
      <a href="https://www.google.com"> THIS IS A LINK</a> - takes you to a link outside of your site
 	 <a href="mysecondpage.html">THIS IS MY SECOND PAGE</a> - takes you to file:///localhost/mysecondpage.html
 	 
-Image Element:
+-- Image Element:
 <img src="/images/mypicture.jpg">  Or just keep the image in the same directory as the html.  No closing tag for img element
 <img src="https://www.mypictures.com/myexternalpicture.jpg">
 
-alt attribute - specify what the image is
+alt attribute - specify what the image is for a reader to read out loud
    <img src="/images/mypicture.jpg" alt="Image of mypicture.jpg">
    
    
-Comments in html:
+-- Comments in html:
 <!-- This is my comment -->
 VSCode has a shortcut - CTRL+/
 
@@ -71,7 +70,7 @@ VSCode has a shortcut - CTRL+/
 <span></span> - generic inline container. Can format content within a block to have a different style.
 
 
-Odd assortment of elements:
+-- Odd assortment of elements:
 <hr> - Horizontal rule.  An empty line for spacing.  No closing tag is used for this element.
 
 <br> - Line break to format text how you want it broken up. Can use within a <p></p> to break at certain points
@@ -112,7 +111,7 @@ Wikipedia Table Example - https://en.wikipedia.org/wiki/List_of_largest_cities#L
 Dole/Kemp Website - http://www.dolekemp96.org/main.htm
 Space Jam Website - https://www.spacejam.com/
 
-Forms (TR, TD, TH):
+-- Forms (TR, TD, TH):
 Bird Species - https://en.wikipedia.org/wiki/Largest_organisms#Heaviest_living_bird_species
 
 
@@ -143,7 +142,7 @@ Bird Species - https://en.wikipedia.org/wiki/Largest_organisms#Heaviest_living_b
 forms <tab>  Emmet will start the form
 
 
-Common input elements:
+-- Common input elements:
 <input>  Default is a text input
 
 <input type = "text" placeholder = "Username">
@@ -156,7 +155,7 @@ See mdn for other input types
 Placeholder attribute tells in the form type what data is needed
 
 
-Labels:
+-- Labels:
 
 <button> submits the action for <form action=xxx>
 
@@ -166,7 +165,7 @@ Select and option elements - Drop Down selection
 
 Review input elements also text area
 
-Form Validations:
+-- Form Validations:
 html attribute - required,minlength,pattern
 
 -- CSS
@@ -190,10 +189,10 @@ button {
     background-color: pink;
 }
 
-Colors:
+-- Colors:
 htmlcolorcodes.com
 
-RGB colors:
+-- RGB colors:
 h1 {
     color: green;
     background-color: rgb(89,151,0)
@@ -206,18 +205,18 @@ Hex Colors Each RGB is 2 hex digits:
 }
 
 
-Common Text properties:
+-- Common Text properties:
 text-align
 font-weight
 text-decoration
 line-height
 letter-spacing
 
-Font size:
+-- Font size:
 Relative and Absolute sizes
 px is most common
 
-Font fmily:
+Font family:
 Depends on fonts included with browser (web-safe fonts)
 You can send your custom fonts (covered later)
 cssfontstack.com
@@ -236,13 +235,13 @@ h1 {
 }
 
 
-CSS Selectors:
+-- CSS Selectors:
 Universal and Element Selectors
 https://www.canva.com/design/DAEANYqyik4/tdD7T7i698xhdPQUS_nrtQ/view?utm_content=DAEANYqyik4&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton
 https://coolors.co/palettes/trending
 
 
-Class Selector (most comon)
+-- Class Selector (most comon)
 
 Exercise:
 index.html:
@@ -273,7 +272,7 @@ li {
 }
 
 
-Descendnt selector:
+-- Descendnt selector:
 /* All anchors in the li will be blue */
 li a {
   color: blue;
@@ -317,19 +316,19 @@ h2 > button {
 }
 
 
-Attribute Selector
+-- Attribute Selector
 input[type="password"]{
   color: greenyellow;
 }
 
-Pseudo Classes
+-- Pseudo Classes
 Keyword to specify a special state of the selected element
 button:hover {
   background-color: red;
   color: white;
 }
 
-Checkerboard example:
+-- Checkerboard example:
 div:nth-of-type(1n){
     background-color:red;
 }
@@ -337,7 +336,7 @@ div:nth-of-type(2n){
     background-color:black;
 }
 
-Pseudo Elements
+-- Pseudo Elements
 .post::first-letter {
   font-size: 20px;
 }
@@ -346,11 +345,11 @@ h2::first-letter {
   color: magenta;
 }
 
-Cascade
+-- Cascade
 The order you have your types are declared as the last matching type in CSS
 
 
-Specificity
+-- Specificity
 https://specificity.keegan.st/
 
 ID > CLASS > ELEMENT selectors
@@ -645,25 +644,846 @@ Bootstrap4_Code
 
 
 
-JAVASCRIPT FINALLY!!!!
+-- JAVASCRIPT FINALLY!!!!
 https://codepen.io/ste-vg/details/GRooLza
 
 -- Javascript Basics:
 Values and Variables
-  
+Primitive types:
+  Number
+  String
+  Boolean
+  Null
+  Undefined
+
+Easiest place to start - Chrome Developer Tools console
+Command + Opt + J
+
+Numbers:
+Typical operators: +, -, \, *, %, **  Also NaN (Not a Number)
+% = modulo (remainder) and can be used to determine if a number is even or odd
+> 23769 % 2
+1    <-- indicates odd number
+
+** - exponent
+> 2 ** 4
+16   <-- two to the fourth
+
+NaN - Not a Number
+> 4.6473
+"Number"
+> 0/0
+NaN
+> NaN * 4
+NaN
+> 1 + NaN
+NaN
+
+Order of operations
+> 4+3*4/2
+10
+> (13 % 5) ** 2
+9
+
+Comment is 2 forward slashes: //
+
+
+Variables:
+Syntax:
+let someName = value;
+
+>let numHens = 5;
+undefined
+>let numRoosters = 1;
+undefined
+>numHens
+5
+>numRoosters
+1
+>numHens + numRoosters
+6
+>numHens = numHens + 1
+6
+>numHens
+6
+>numHens = numHens - 1
+5
+
+Exercise:
+// Define a variable called myLuckyNumber and set it equal to 37
+let myLuckyNumber = 37;
+let octopusLimbs = 8;
+
++=, -=, *=, /= modifies current variable value
+> score = score + 5
+15
+> score = score + 5
+20
+> score += 5;
+25
+
+Quicker way to increment or decrement:
+>let numLives = 9;
+9
+>numLives--
+9
+>numLives
+8
+>numLives++
+8
+>numLives
+9
+
+Const and Vars:
+const is an assigned value that cannot be changed
+
+>const luckyNum = 25;
+undefined
+>luckyNum
+25
+>luckyNum++
+VM3488:1 Uncaught TypeError: Assignment to constant variable.
+    at <anonymous>:1:9
+
+Const is most useful in arrays and objects
+
+var - the old way to create Variables
+>var runDistance = 26.2;
+undefined
+>runDistance
+26.2
+
+Const exercise:
+// YOU CODE GOES HERE:
+const boilingPointC = 100;
+const boilingPointF = 212;
+
+
+Booleans - True or False
+
+
+Variable naming conventions:
+Camel case is the preferred convention:
+let currentYear = 2021;
+let myMotorcycle = Valkyrie;
+let isGameOver = true;
+
+Strings:
+Strings are text enclosed in quotes.
+NUmbers - 23 is different from "23"
+
+Single vs Double quotes:
+Use either but they must be the same for the String
+For quotes within the string, use the opposite for the actual quotes
+
+String exercise:
+// Your code goes in here:
+let bestColor = 'purple'
+let quote = 'You had me at "hello"'
+
+Strings are indexed with positional numbers beginning with zero
+C h i c k e n
+0 1 2 3 4 5 6
+
+>let animal = "Dumbo Octopus"
+>animal[0]
+"D"
+>animal[1]
+"u"
+>animal.length
+13
+
+String methods:
+Type . after the variable or string and a list of methods is presented to act on the string
+>"Hello".length
+5
+>let msg = "Hello how are you?"
+undefined
+>msg.toUpperCase()
+"HELLO HOW ARE YOU?"
+>yell = msg.toUpperCase()
+"HELLO HOW ARE YOU?"
+>msg
+"Hello how are you?"
+
+Chaining:
+trim() will remove leading and training spaces.  You can chain methods to perform multiple actions
+>let greeting = "    Hello Again!!!!    "
+undefined
+>greeting.trim().toUpperCase()
+"HELLO AGAIN!!!!"
+
+String Methods exercise:
+// DON'T TOUCH THIS LINE!
+const message = "    TASTE THE RAINBOW!  "; //DON'T CHANGE THIS LINE PLEASE!
+
+// YOUR CODE BELOW THIS LINE:
+const whisper = message.trim().toLowerCase()
+
+
+--- String Methods with arguments:
+MDN has examples of methods
+indexOf(), lastOf(),replace()
+
+slice() pulls the word or phrase to the end:
+> let msg = "haha that is so funny!"
+< undefined
+> msg.slice(5)
+< "that is so funny!"
+
+To specify beginning and end, you use (begin,end) ending position is the character id after where you want to stop.
+In this example, 9 is the space after the last "t" in "that"
+> msg.slice(5,9)
+< "that"
+> msg.slice(10,12)
+< "is"
+
+You can also use negative numbers to count from the right to the left
+> msg.slice(-6)
+< "funny!"
+
+replace()  Can replace patterns regex
+
+replace() will only replace the first instance of the string
+> msg.replace("haha","lololol")
+< "lololol that is so funny!"
+
+replaceAll() will replace all instances of a string:
+> msg.replaceAll("h","H")
+< "HaHa tHat is so funny!"
+
+repeat()
+> "lol".repeat(2)
+< "lollol"
+> "lol".repeat(5)
+< "lollollollollol"
+
+
+String methods practice:
+Where word = "skateboard" change the value to facialHair = "beard"
+// DON'T TOUCH THIS LINE! (please)
+const word = "skateboard"; //Don't change this line!
+
+// YOUR CODE BELOW THIS LINE:
+let facialHair = word.slice(5).replace("o","e")
+
+Template Literals
+Create strings and embed expressions in the string.
+Use backtic and not single quotes for the string and ${} for the expressions
+> `Hey ${10 + 6 + 3} that's Aretha Franklin`
+< "Hey 19 that's Aretha Franklin"
+> `${30 * 3 + 9} bottles of beer on the wall.`
+< "99 bottles of beer on the wall."
+
+> let qty = 5
+< undefined
+> let price = 2.99
+< undefined
+> `You bought ${qty} items for ${price}.  Your total is ${qty * price}. Pay up.`
+< "You bought 5 items for 2.99.  Your total is 14.950000000000001. Pay up."
+
+Undefined and Null:
+let loggedInUser = null;  // explicitly null
+
+undefined:
+> let c  // no value was given
+< undefined
+> c
+< undefined
+
+--- Math Object:
+Math.  many methods available
+Read about the Math object and methods in MDN
+> Math.PI
+< 3.141592653589793
+> Math.floor(23.99999)  //chops off the decimal
+< 23
+> Math.ceil(34.999)  //rounds up the whole number
+< 35
+> Math.ceil(34.01)
+< 35
+> Math.ramdom();
+< TypeError: Math.ramdom is not a function. (In 'Math.ramdom()', 'Math.ramdom' is undefined)
+> Math.ramdom()
+< TypeError: Math.ramdom is not a function. (In 'Math.ramdom()', 'Math.ramdom' is undefined)
+> Math.random()  //random number betweek 0 and 1
+< 0.1653967648516116
+> Math.floor(Math.random())
+< 0
+< 0
+> Math.floor(Math.random() * 5) + 1 //generates a random whole number
+< 5
+< 3
+< 5
+< 1
+
+
+String Template Literal Exercise:
+// NO TOUCHING! (please)
+const die1 = Math.floor(Math.random() * 6) + 1; //random number from 1-6
+const die2 = Math.floor(Math.random() * 6) + 1; //random number from 1-6
+
+// YOUR CODE BELOW THIS LINE:
+let roll = `You rolled a ${die1} and a ${die2}. They sum to ${die1 + die2}`
+
+
+Javascript Decision Making - Boolean Logic 
+Comparison Operators - >,<,>=,<=,==,!=,===,!==
+
+let age = 32;
+undefined
+age >= 18
+true
+
+== coerces values to compare - ignores type and may produce unexpected results
+'b' == 'c';
+false
+0 == '';
+true
+true == false
+false
+0 == false
+true
+null == undefined
+true
+
+=== - matches value and type
+1 === 1
+true
+1 === '1'
+false
+false === 0
+false
+
+console.log()
+prints arguments to the console used within javascript files
+console.log("HELLO")
+VM3788:1 HELLO
+undefined
+console.log(1 + 4, "HI", true)
+VM4023:1 5 "HI" true
+undefined
+VM4240:1 Warning, please turn back
+(anonymous) @ VM4240:1
+undefined
+console.error("Something broke!!!!")
+VM4317:1 Something broke!!!!
+(anonymous) @ VM4317:1
+undefined
+See console. methods
+
+
+alert() - Prints an alert to the screen on the web page
+alert("Hello")    <-- popped the message "Hello" on the screen with an OK button
+alert("Hello")
+undefined
+
+prompt() - Prompt will pop up on the screen with a text box.  Text entered displays in the console
+
+prompt("Reply Hello")
+"Hello"               <-- Typed Hello and clicked OK
+prompt("Reply Hello")
+"Goodbye"             <-- Typed Goodbye and clicked OK
+
+let userInput = prompt("please enter a number")
+undefined
+userInput
+"22"   <-- 22 was saved to userInput that I entered.
+
+parseInt(userInput)  <-- Will convert string to integer
+22
+parseInt(userInput) + 1
+23
+
+Running code from a file:
+script.js:
+  console.log("This is my first Javascript file");
+
+Added to index.html:
+  <script src="script.js"></script>
+
+The console showed the console.log() output
+
+Typically, place your <script> within <body> at the end
+
+
+if/else if statements:
+app.js:
+let random = Math.random();
+if (random < 0.5) {
+    console.log("The number is < 0.5")
+    console.log(random);
+}
+
+if conditional exercise. function already set to generate random . print even when the number is even, nothing if it is odd:
+function isEven(num){
+    //WRITE YOUR CODE BETWEEN THIS LINE: ↓ ↓ ↓ ↓ 
+  if (num % 2 === 0) {
+      console.log("even")
+  }
+   
+    //AND THIS LINE ↑↑↑↑↑
+}
+
+
+
+Excercise 2 Conditionals:
+ if(phrase === "stop") {
+        console.log("red")
+        } 
+  else if(phrase === "slow") {
+    console.log("yellow")
+    } 
+  else if(phrase === "go") {
+        console.log("green")
+    } 
+  else {
+        console.log("purple")
+    }
+   
+   
+    //AND THIS LINE ↑↑↑↑↑
+}
+
+
+Nesting conditionals:
+Nested conditionals practice:
+// Change the value of num, so that "YOU GOT ME!" prints out
+const num = 102; // THIS IS THE ONLY LINE YOU SHOULD CHANGE :) 
+
+// DO NOT TOUCH ANYTHING BELOW (please) 
+if(num <= 100) {
+    if(num >= 50) {
+        console.log("HEY!");
+    }
+} else {
+    if (num < 103) {
+        if(num % 2 === 0){
+            console.log("YOU GOT ME!");
+        }
+    }
+}
+
+
+Truthy and Falsy values:
+Inherently falsy:
+0, null, NaN, false, "" empty string, undefined
+Eveyting else is truthy
+
+
+Logical operators:
+AND - && - Both conditions must be true
 
 
 
 
+OR - || - At least one condition must be toUpperCase
+NOT - !  - 
+
+
+Logical AND Mystery exercise:
+const mystery = 'Phase7'; //CHANGE THIS VALUE TO MAKE THE CONDITIONAL BELOW TRUE
 
 
 
+// LEAVE THIS CODE ALONE! (pretty please)
+if(mystery[0] === 'P' && mystery.length > 5 && mystery.indexOf('7') !== -1){
+    console.log("YOU GOT IT!!!");
+}
 
 
+Arrays:
+Ordered collection of values
+
+let colors = [];
+undefined
+typeof colors
+"object"
+let colors = ["red", "yellow", "green"];    
+undefined
+colors
+(3) ["red", "yellow", "green"]
+colors.length
+3
+[].length
+0
+
+Practice Arrays:
+// Define lottoNumbers below:
+let lottoNumbers = [6,21,32,18,45,50];
+
+Array Random Access:
+Each element has an index:
+Doc Dopey Bashful Grumpy  Sneezy  
+ 0    1     2       3       4
+
+ colors
+(3) ["red", "yellow", "green"]
+colors[0] = "rad"
+"rad"
+colors
+(3) ["rad", "yellow", "green"]
+colors[0] = "red"
+"red"
+colors
+(3) ["red", "yellow", "green"]
+colors[10] = "purple"       <-- fills in 5 thru 9
+"purple"
+colors
+(11) ["red", "yellow", "green", empty × 7, "purple"]
+colors.length
+11
+colors[5]
+undefined
 
 
+Array Access Exerise:
+const leaderboard = ['Harry', 'Lua', 'Hermione', 'Bellatrix']; //DON'T TOUCH THIS LINE!
+
+// YOUR CODE BELOW HERE:
+leaderboard[1] = "Luna"
+leaderboard[3] = "Draco"
 
 
+Array Methods:
+See MDN on arrays
+push - add to end
+pop - remove from end
+shift - remove from start
+unshift - add to start
+
+let movieLine = ['tom', 'nancy'];
+undefined
+movieLine[2] = 'pablo'
+"pablo"
+movieLine.push('oliver')
+4
+movieLine
+(4) ["tom", "nancy", "pablo", "oliver"]
+let cat = "blue"
+undefined
+cat.toUpperCase()
+"BLUE"
+movieLine.push('eva')
+5
+movieLine.push('harry', 'bob')
+7
+movieLine
+(7) ["tom", "nancy", "pablo", "oliver", "eva", "harry", "bob"]
+movieLine.pop()
+"bob"
+movieLine
+(6) ["tom", "nancy", "pablo", "oliver", "eva", "harry"]
+let person = movieLine.pop()
+undefined
+person
+"harry"
+let barbell = []
+undefined
+barbell.push(45)
+1
+barbell.push(24)
+2
+barbell.push(10)
+3
+barbell.push(5)
+4
+barbell
+(4) [45, 24, 10, 5]
+barbell.pop()
+5
+barbell.pop()
+10
+barbell.pop()
+24
+barbell.pop()
+45
+barbell
+[]
+movieLine
+(5) ["tom", "nancy", "pablo", "oliver", "eva"]
+movieLine.shift()
+"tom"
+movieLine
+(4) ["nancy", "pablo", "oliver", "eva"]
+movieLine.shift()
+"nancy"
+movieLine
+(3) ["pablo", "oliver", "eva"]
+movieLine.unshift('VIP')
+4
+movieLine
+(4) ["VIP", "pablo", "oliver", "eva"]
 
 
+push/pop/shift/unshift Exercise:
+const planets = ['The Moon','Venus', 'Earth', 'Mars', 'Jupiter']; //DO NOT TOUCH THIS LINE!
+
+// YOUR CODE GOES BELOW THIS LINE:
+planets.shift('The Moon')
+planets.push('Saturn')
+planets.unshift('Mercury')
+
+Concat, indexOf, includes, and reverse:
+concat - Combine arrays or values into one string or array
+let cats = ['blue', 'general']
+undefined
+let dogs = ['puck', 'didi']
+undefined
+cats.concat(dogs)
+(4) ["blue", "general", "puck", "didi"]
+dogs.concat(cats)
+(4) ["puck", "didi", "blue", "general"]
+let animals = dogs.concat(cats)
+undefined
+animals
+(4) ["puck", "didi", "blue", "general"]
+
+includes - Tells us if an array includes a particular value with boolean value
+cats.includes('blue')
+true
+cats.includes('jones')
+false
+
+indexOf - Returns the index value for the array element
+animals.indexOf('didi')
+1
+animals.indexOf('puck')
+0
+animals.indexOf('general')
+3
+
+reverse - reverses the array and is permanent
+animals.reverse()
+(4) ["general", "blue", "didi", "puck"]
+animals
+(4) ["general", "blue", "didi", "puck"]
+
+Slice, Splice, and Sort:
+slice - get a slice of an array using begin and/or end values
+let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+undefined
+colors.slice(1)
+(6) ["orange", "yellow", "green", "blue", "indigo", "violet"]
+colors.slice(5)
+(2) ["indigo", "violet"]
+let coolColors = colors.slice(3)
+undefined
+coolColors
+(4) ["green", "blue", "indigo", "violet"]
+colors
+(7) ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
+colors.slice(2,4)
+(2) ["yellow", "green"]
+let warmColors = colors.slice(0,3)
+undefined
+warmColors
+(3) ["red", "orange", "yellow"]
+colers
+(7) ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
+colors.slice(-3)
+(3) ["blue", "indigo", "violet"]
+
+splice - change the contents of an array by removing or adding elements
+(indexstart,deletecount, item)
+colors
+(7) ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
+colors.splice(5,1)
+["indigo"]
+colors
+(6) ["red", "orange", "yellow", "green", "blue", "violet"]
+colors.splice(1,0,'red-orange')
+[]
+colors
+(7) ["red", "red-orange", "orange", "yellow", "green", "blue", "violet"]
+colors.splice(3,0,'yellow-green','ocean-green)
+VM1440:1 Uncaught SyntaxError: Invalid or unexpected token
+colors.splice(3,0,'yellow-green','ocean-green')
+[]
+colors
+(9) ["red", "red-orange", "orange", "yellow-green", "ocean-green", "yellow", "green", "blue", "violet"]
+colors.splice(2,2,'DELETED!!')
+(2) ["orange", "yellow-green"]
+colors
+(8) ["red", "red-orange", "DELETED!!", "ocean-green", "yellow", "green", "blue", "violet"]
+
+Sort:
+see the MDN
+
+Reference types and equity testing:
+arrays have their own places in memory
+
+Nested Arrays:
+const gameBoard = [['X', 'O', 'X'], ['O', null, 'X'], ['O', 'X', 'X']]
+undefined
+gameBoard
+(3) [Array(3), Array(3), Array(3)]0: (3) ["X", "O", "X"]1: (3) ["O", null, "X"]2: (3) ["O", "X", "X"]length: 3__proto__: Array(0)
+gameBoard[1]
+(3) ["O", null, "X"]
+gameBoard[1][1]
+null
+gameBoard[1][2]
+"X"
+
+Nested Arrays Exercise:
+// DO NOT TOUCH!!! (please)
+const airplaneSeats = [
+    ['Ruth', 'Anthony', 'Stevie'],
+    ['Amelia', 'Pedro', 'Maya'],
+    ['Xavier', 'Ananya', 'Luis'],
+    ['Luke', null, 'Deniz'],
+    ['Rin', 'Sakura', 'Francisco']
+];
+
+// YOUR CODE GOES BELOW THIS LINE:
+airplaneSeats[3].splice(1,1)
+airplaneSeats[3].splice(1,0,'Hugo')
+
+
+- JavaScript Object Literals:
+Spend a couple of days practice on this
+Objects are stored as key:value pairs
+const fitBitData = {
+    totalSteps        : 308727,
+    totalMiles        : 211.7,
+    avgCalorieBurn    : 5755,
+    workoutsThisWeek  : '5 of 7',
+    avgGoodSleep      : '2:13'
+};
+
+
+const person = {
+  firstName: "Mick",
+  lastName: "Jagger"
+}
+undefined
+person
+{firstName: "Mick", lastName: "Jagger"}
+firstName: "Mick"
+lastName: "Jagger"
+__proto__: Object
+
+First Object Exercise:
+// Your code goes in here:
+const product = {
+    name: "Gummy Bears",
+    inStock: true,
+    price: 1.99,
+    flavors: ["grape", "apple", "cherry"]
+}
+
+
+Accessing Data Out of Objects:
+
+const nums = [23, 45, 99]
+undefined
+nums
+(3) [23, 45, 99]
+nums[1]
+45
+person
+{firstName: "Mick", lastName: "Jagger"}
+person["lastName"]
+"Jagger"
+const kitchenSink = { favNum: 90125, isFunny: true, colors: ["red", "blue"]}
+undefined
+kitchenSink
+{favNum: 90125, isFunny: true, colors: Array(2)}
+kitchenSink["colors"]
+(2) ["red", "blue"]
+const years = {1999: 'GOOD', 2020: 'BAD'}     <-- All characters are converted to a string (1999/2000 is a string and not a number)
+undefined
+years
+{1999: "GOOD", 2020: "BAD"}
+
+
+Object Access Exercise:
+//PLEASE DON'T TOUCH THIS LINE!
+const restaurant = {
+    name: 'Ichiran Ramen',
+    address: `${Math.floor(Math.random() * 100) + 1} Johnson Ave`,
+    city: 'Brooklyn',
+    state: 'NY',
+    zipcode: '11206',
+}
+
+//YOUR CODE GOES DOWN HERE:
+const fullAddress = restaurant.address + ', ' + restaurant.city + ', ' + restaurant.state + restaurant.zipcode
+
+
+Modifying Objects:
+const midTerms = {danielle: 96, thomas: 78}
+undefined
+midTerms
+{danielle: 96, thomas: 78}
+midTerms.thomas = 79
+79
+midTerms
+{danielle: 96, thomas: 79}
+midTerms.thomas = "C+"
+"C+"
+midTerms['danielle'] = 'A'
+"A"
+midTerms
+{danielle: "A", thomas: "C+"}
+midTerms.ezra = "B"
+"B"
+midTerms['Antonio'] = "A"
+"A"
+midTerms
+{danielle: "A", thomas: "C+", ezra: "B", Antonio: "A"}
+
+Nesting Arrays and Objects:
+const comments = [
+    {username: 'Tammy', text: 'lolololol', votes: 9},
+    {username: 'Brad', text: 'lmao', votes: 5}
+]
+undefined
+comments
+(2) [{…}, {…}]0: {username: "Tammy", text: "lolololol", votes: 9}1: {username: "Brad", text: "lmao", votes: 5}length: 2__proto__: Array(0)
+comments.[1]
+VM3179:1 Uncaught SyntaxError: Unexpected token '['
+comments[1]
+{username: "Brad", text: "lmao", votes: 5}
+comments[1].text
+"lmao"
+
+Loops:
+
+
+Exercise:
+// Print out "Da ba dee da ba daa" 6 times, using a for loop
+for (let count = 1; count <= 6; count += 1){
+    console.log("da ba dee da ba daa");
+}
+
+Exercise 2:
+// Write a loop that prints:
+// 25
+// 20
+// 15
+// 10
+// 5
+// 0
+for (let i = 25; i >=0; i -= 5) {
+    console.log(i)
+
+Exercise 3 - Loop through arrays:
+const people = ["Scooby", "Velma", "Daphne", "Shaggy", "Fred"]; //DONT TOUCH THIS LINE!
+
+// WRITE YOUR LOOP BELOW THIS LINE:
+for (let i = 0; i <= people.length - 1; i += 1) {
+    console.log(people[i].toUpperCase())
+}
+
+While loops:
+const numbers = [1,2,3,4,5,6,7,8,9]; //DON'T CHANGE THIS LINE PLEASE!
+
+// WRITE YOUR LOOP BELOW THIS LINE:
+for (let squ of numbers){
+    console.log(squ * squ);
+}
+
+
+Functions:
 
