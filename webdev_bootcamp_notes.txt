@@ -1068,7 +1068,7 @@ if(num <= 100) {
 Truthy and Falsy values:
 Inherently falsy:
 0, null, NaN, false, "" empty string, undefined
-Eveyting else is truthy
+Eveything else is truthy
 
 
 Logical operators:
@@ -1486,4 +1486,135 @@ for (let squ of numbers){
 
 
 Functions:
+Reusable procedures
+First function:
+Define the function, run elsewhere in the scrips
 
+function funcName() {
+  //do something
+}
+
+function singSong(){
+  console.log('DO')
+  console.log('RE')
+  console.log('MI')
+  console.log('FA')
+}
+
+singSong
+ƒ singSong(){
+    console.log('DO')
+    console.log('RE')
+    console.log('MI')
+}
+singSong()
+appa.js:2 DO
+appa.js:3 RE
+appa.js:4 MI
+undefined
+singSong()
+appa.js:2 DO
+appa.js:3 RE
+appa.js:4 MI
+
+Heart Function Exercise:
+// Write your function here:
+function printHeart(){
+    console.log('<3')
+}
+
+printHeart()
+
+
+Arguments:
+function greet(firstName){
+    console.log(`firstName is ${firstName}`)
+    console.log(`Hi, ${firstName}!`)
+}
+
+greet('Cosmo')
+firstName is Cosmo
+Hi, Cosmo!
+
+Rant Exercise:
+// DEFINE YOUR FUNCTION:
+function rant(message){
+    console.log(`${message}`.toUpperCase())
+    console.log(`${message}`.toUpperCase())
+    console.log(`${message}`.toUpperCase())
+}
+
+
+Greet Take 2 (2 arguments)
+function greet(firstName, lastName){
+    console.log(`Hi, ${firstName} ${lastName[0]!`)
+}
+greet('Cosmo', 'McGillicutty')
+Hi, Cosmo M!
+
+Multiple Args Exercise:
+// define isSnakeEyes below:
+function isSnakeEyes(num1, num2) {
+    if ( num1 === 1 && num2 === 1) {
+        console.log('Snake Eyes!')
+    } else { console.log('Not Snake Eyes!') }
+}
+
+
+The Return Keyword:
+console.log does not let you save the output to use with variables.  Return does.
+Return stops the function.
+
+function add(x, y) {
+  if (typeof x !== 'number' !! typeof y !== 'number') {
+    return false
+  }
+  let sum = x + y
+  return sum
+}
+add(5,4)
+9
+add('a',4)
+false
+add(add(2,3),4)
+9
+let total = add(5,4)
+undefined
+total
+9
+
+Exercise Return Value Function:
+// DEFINE YOUR FUNCTION BELOW:
+function multiply(num1,num2) {
+    return num1 * num2
+}
+
+Exercise isShortsWeather Function:
+// DEFINE YOUR FUNCTION BELOW:
+function isShortsWeather(temp) {
+    if (temp < 75 ) {
+        return false
+    }
+    return true
+}
+
+Last Element Exercise:
+// DEFINE YOUR FUNCTION BELOW:
+function lastElement(arr) {
+    if(arr.length === 0) {
+        return null;
+    } else {
+        return arr[arr.length - 1];
+    }
+}
+
+Function Scope:
+The location where a variable is defined dictated where we have access to a variable
+function collectEggs() {
+  let totalEggs = 6
+  console.log(totalEggs)
+}
+If you try to console.log totalEggs here, the variable would not be defined.
+
+
+Block Scope:
